@@ -1,0 +1,144 @@
+PS D:\ai\ai-playwright-tools> npm run test
+
+> ai-playwright-tools@1.0.0 test
+> playwright test
+
+
+Running 1 test using 1 worker
+
+     1 [chromium] › tests\ai.spec.js:133:6 › ai: select option example (page_screenshot)
+> model deepseek-chat
+> messages [
+  {
+    role: 'user',
+    content: 'This is your task: Select color option with label "Red"\n' +
+      '\n' +
+      '* When creating CSS selectors, ensure they are unique and specific enough to select only one element, even if there are multiple elements of the same type (like multiple h1 elements).\n' +
+      "* Avoid using generic tags like 'h1' alone. Instead, combine them with other attributes or structural relationships to form a unique selector.\n" +
+      '* You must not derive data from the page if you are able to do so by using one of the provided functions, e.g. locator_evaluate.\n' +
+      '\n' +
+      'Webpage snapshot:\n' +
+      '\n' +
+      '```\n' +
+      '\n' +
+      '    <h1>Hello, Rayrun!</h1>\n' +
+      '    <form id="search">\n' +
+      '      Search\n' +
+      '      <input type="text" name="query" data-testid="search-input" />\n' +
+      '    </form>\n' +
+      '    <select id="id-select">\n' +
+      '      </select>\n' +
+      '    <div id="click-counter">\n' +
+      '      <p>Click count: <span id="current-count" data-testid="current-count">0</span></p>\n' +
+      '      <button id="click-button">Click me</button>\n' +
+      '      \n' +
+      '    </div>\n' +
+      '  \n' +
+      '\n' +
+      '```\n'
+  }
+]
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_dd039f63-b1a0-466c-9801-42c700b76306',
+      type: 'function',
+      function: [Object]
+    }
+  ]
+}
+> function {
+  name: 'locateElement',
+  arguments: '{"cssSelector":"select#id-select"}'
+}
+> tool {
+  role: 'tool',
+  tool_call_id: 'call_0_dd039f63-b1a0-466c-9801-42c700b76306',
+  content: '{"elementId":"c2VsZWN0I2lkLXNlbGVjdA=="}'
+}
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_795215e0-6415-4bfa-ab89-b760ae7a02ca',
+      type: 'function',
+      function: [Object]
+    }
+  ]
+}
+> function {
+  name: 'locator_selectOption',
+  arguments: '{"label":"Red","elementId":"c2VsZWN0I2lkLXNlbGVjdA=="}'
+  ✓  1 [chromium] › tests\ai.spec.js:133:6 › ai: select option example (page_screenshot) (16.7s)
+> tool {
+  role: 'tool',
+  tool_call_id: 'call_0_795215e0-6415-4bfa-ab89-b760ae7a02ca',
+  content: '{"success":true}'
+}
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_11cbd668-ca71-408c-8cc4-ca26cd147764',
+      type: 'function',
+      function: [Object]
+    }
+  ]
+}
+> function { name: 'resultAction', arguments: '{}' }
+> message.tool_calls result, break
+> messages [
+  {
+    role: 'user',
+    content: 'This is your task: Select color option with label "Red"\n' +
+      '\n' +
+      '* When creating CSS selectors, ensure they are unique and specific enough to select only one element, even if there are multiple elements of the same type (like multiple h1 elements).\n' +
+      "* Avoid using generic tags like 'h1' alone. Instead, combine them with other attributes or structural relationships to form a unique selector.\n" +
+      '* You must not derive data from the page if you are able to do so by using one of the provided functions, e.g. locator_evaluate.\n' +
+      '\n' +
+      'Webpage snapshot:\n' +
+      '\n' +
+      '```\n' +
+      '\n' +
+      '    <h1>Hello, Rayrun!</h1>\n' +
+      '    <form id="search">\n' +
+      '      Search\n' +
+      '      <input type="text" name="query" data-testid="search-input" />\n' +
+      '    </form>\n' +
+      '    <select id="id-select">\n' +
+      '      </select>\n' +
+      '    <div id="click-counter">\n' +
+      '      <p>Click count: <span id="current-count" data-testid="current-count">0</span></p>\n' +
+      '      <button id="click-button">Click me</button>\n' +
+      '      \n' +
+      '    </div>\n' +
+      '  \n' +
+      '\n' +
+      '```\n'
+  },
+  { role: 'assistant', content: '', tool_calls: [ [Object] ] },
+  {
+    role: 'tool',
+    tool_call_id: 'call_0_dd039f63-b1a0-466c-9801-42c700b76306',
+    content: '{"elementId":"c2VsZWN0I2lkLXNlbGVjdA=="}'
+  },
+  { role: 'assistant', content: '', tool_calls: [ [Object] ] },
+  {
+    role: 'tool',
+    tool_call_id: 'call_0_795215e0-6415-4bfa-ab89-b760ae7a02ca',
+    content: '{"success":true}'
+  }
+]
+> lastFunctionResult {}
+
+  Slow test file: [chromium] › tests\ai.spec.js (16.7s)
+  Consider running tests from slow files in parallel, see https://playwright.dev/docs/test-parallel.
+  1 passed (19.3s)
+PS D:\ai\ai-playwright-tools>

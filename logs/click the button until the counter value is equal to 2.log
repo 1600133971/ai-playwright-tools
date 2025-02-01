@@ -1,0 +1,250 @@
+PS D:\ai\ai-playwright-tools> npm run test
+
+> ai-playwright-tools@1.0.0 test
+> playwright test
+
+
+Running 1 test using 1 worker
+
+     1 [chromium] › tests\ai.spec.js:73:6 › ai: executes click
+> model deepseek-chat
+> messages [
+  {
+    role: 'user',
+    content: 'This is your task: Click the button until the counter value is equal to 2\n' +
+      '\n' +
+      '* When creating CSS selectors, ensure they are unique and specific enough to select only one element, even if there are multiple elements of the same type (like multiple h1 elements).\n' +
+      "* Avoid using generic tags like 'h1' alone. Instead, combine them with other attributes or structural relationships to form a unique selector.\n" +
+      '* You must not derive data from the page if you are able to do so by using one of the provided functions, e.g. locator_evaluate.\n' +
+      '\n' +
+      'Webpage snapshot:\n' +
+      '\n' +
+      '```\n' +
+      '\n' +
+      '    <h1>Hello, Rayrun!</h1>\n' +
+      '    <form id="search">\n' +
+      '      Search\n' +
+      '      <input type="text" name="query" data-testid="search-input" />\n' +
+      '    </form>\n' +
+      '    <div id="click-counter">\n' +
+      '      <p>Click count: <span id="current-count" data-testid="current-count">0</span></p>\n' +
+      '      <button id="click-button">Click me</button>\n' +
+      '      \n' +
+      '    </div>\n' +
+      '  \n' +
+      '\n' +
+      '```\n'
+  }
+]
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_1603b96d-a875-433e-8930-08f96fabdb4c',
+      type: 'function',
+      function: [Object]
+    },
+    {
+      index: 1,
+      id: 'call_1_8e0bb81b-8189-4a61-825b-29ddbfa6552f',
+      type: 'function',
+      function: [Object]
+    }
+  ]
+}
+> function { name: 'locateElement', arguments: '{"cssSelector":"#click-button"}' }
+> function {
+  name: 'locateElement',
+  arguments: '{"cssSelector":"#current-count"}'
+}
+> tool {
+  role: 'tool',
+  tool_call_id: 'call_0_1603b96d-a875-433e-8930-08f96fabdb4c',
+  content: '{"elementId":"I2NsaWNrLWJ1dHRvbg=="}'
+}
+> tool {
+  role: 'tool',
+  tool_call_id: 'call_1_8e0bb81b-8189-4a61-825b-29ddbfa6552f',
+  content: '{"elementId":"I2N1cnJlbnQtY291bnQ="}'
+}
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_dfe9c2b7-532d-493b-ae01-db271249ed6b',
+      type: 'function',
+      function: [Object]
+    }
+  ]
+}
+> function {
+  name: 'locator_innerText',
+  arguments: '{"elementId":"I2N1cnJlbnQtY291bnQ="}'
+}
+> tool {
+  role: 'tool',
+  tool_call_id: 'call_0_dfe9c2b7-532d-493b-ae01-db271249ed6b',
+  content: '{"innerText":"0"}'
+}
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_783f4c26-62e0-4782-9f6d-0b6bcc01db79',
+      type: 'function',
+      function: [Object]
+    },
+    {
+      index: 1,
+      id: 'call_1_35bac4f9-9b98-445e-9efd-509550c607df',
+      type: 'function',
+      function: [Object]
+    },
+    {
+      index: 2,
+      id: 'call_2_9bc29995-ce43-43e6-9630-94872983716b',
+      type: 'function',
+      function: [Object]
+    },
+    {
+      index: 3,
+      id: 'call_3_82e5879f-a3e0-4313-887c-51d181ade9d2',
+      type: 'function',
+      function: [Object]
+    }
+  ]
+}
+> function {
+  name: 'locator_click',
+  arguments: '{"elementId":"I2NsaWNrLWJ1dHRvbg=="}'
+}
+> function {
+  name: 'locator_innerText',
+  arguments: '{"elementId":"I2N1cnJlbnQtY291bnQ="}'
+}
+> function {
+  name: 'locator_click',
+  arguments: '{"elementId":"I2NsaWNrLWJ1dHRvbg=="}'
+}
+> function {
+  name: 'locator_innerText',
+  arguments: '{"elementId":"I2N1cnJlbnQtY291bnQ="}'
+}
+> tool {
+  role: 'tool',
+  tool_call_id: 'call_0_783f4c26-62e0-4782-9f6d-0b6bcc01db79',
+  content: '{"success":true}'
+}
+> tool {
+  role: 'tool',
+  tool_call_id: 'call_1_35bac4f9-9b98-445e-9efd-509550c607df',
+  content: '{"innerText":"1"}'
+}
+> tool {
+  role: 'tool',
+  tool_call_id: 'call_2_9bc29995-ce43-43e6-9630-94872983716b',
+  content: '{"success":true}'
+}
+> tool {
+  role: 'tool',
+  tool_call_id: 'call_3_82e5879f-a3e0-4313-887c-51d181ade9d2',
+  content: '{"innerText":"2"}'
+}
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_a9a42b2d-b6fa-445b-8fe3-2719d252217f',
+      type: 'function',
+      function: [Object]
+    }
+  ]
+}
+> function { name: 'resultAction', arguments: '{}' }
+> message.tool_calls result, break
+> messages [
+  {
+    role: 'user',
+    content: 'This is your task: Click the button until the counter value is equal to 2\n' +
+      '\n' +
+      '* When creating CSS selectors, ensure they are unique and specific enough to select only one element, even if there are multiple elements of the same type (like multiple h1 elements).\n' +
+      "* Avoid using generic tags like 'h1' alone. Instead, combine them with other attributes or structural relationships to form a unique selector.\n" +
+      '* You must not derive data from the page if you are able to do so by using one of the provided functions, e.g. locator_evaluate.\n' +
+      '\n' +
+      'Webpage snapshot:\n' +
+      '\n' +
+      '```\n' +
+      '\n' +
+      '    <h1>Hello, Rayrun!</h1>\n' +
+      '    <form id="search">\n' +
+      '      Search\n' +
+      '      <input type="text" name="query" data-testid="search-input" />\n' +
+  ✓  1 [chromium] › tests\ai.spec.js:73:6 › ai: executes click (14.6s)
+      '    <div id="click-counter">\n' +
+      '      <p>Click count: <span id="current-count" data-testid="current-count">0</span></p>\n' +
+      '      <button id="click-button">Click me</button>\n' +
+      '      \n' +
+      '    </div>\n' +
+      '  \n' +
+      '\n' +
+      '```\n'
+  },
+  {
+    role: 'assistant',
+    content: '',
+    tool_calls: [ [Object], [Object] ]
+  },
+  {
+    role: 'tool',
+    tool_call_id: 'call_0_1603b96d-a875-433e-8930-08f96fabdb4c',
+    content: '{"elementId":"I2NsaWNrLWJ1dHRvbg=="}'
+  },
+  {
+    role: 'tool',
+    tool_call_id: 'call_1_8e0bb81b-8189-4a61-825b-29ddbfa6552f',
+    content: '{"elementId":"I2N1cnJlbnQtY291bnQ="}'
+  },
+  { role: 'assistant', content: '', tool_calls: [ [Object] ] },
+  {
+    role: 'tool',
+    tool_call_id: 'call_0_dfe9c2b7-532d-493b-ae01-db271249ed6b',
+    content: '{"innerText":"0"}'
+  },
+  {
+    role: 'assistant',
+    content: '',
+    tool_calls: [ [Object], [Object], [Object], [Object] ]
+  },
+  {
+    role: 'tool',
+    tool_call_id: 'call_0_783f4c26-62e0-4782-9f6d-0b6bcc01db79',
+    content: '{"success":true}'
+  },
+  {
+    role: 'tool',
+    tool_call_id: 'call_1_35bac4f9-9b98-445e-9efd-509550c607df',
+    content: '{"innerText":"1"}'
+  },
+  {
+    role: 'tool',
+    tool_call_id: 'call_2_9bc29995-ce43-43e6-9630-94872983716b',
+    content: '{"success":true}'
+  },
+  {
+    role: 'tool',
+    tool_call_id: 'call_3_82e5879f-a3e0-4313-887c-51d181ade9d2',
+    content: '{"innerText":"2"}'
+  }
+]
+> lastFunctionResult {}
+
+  1 passed (16.5s)
+PS D:\ai\ai-playwright-tools>

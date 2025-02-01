@@ -1,0 +1,159 @@
+PS D:\ai\ai-playwright-tools> npm run test
+
+> ai-playwright-tools@1.0.0 test
+> playwright test
+
+
+Running 1 test using 1 worker
+
+     1 [chromium] › tests\ai.spec.js:81:6 › ai: asserts (toBe)
+> model deepseek-chat
+> messages [
+  {
+    role: 'user',
+    content: 'This is your task: Is the contents of the header equal to "Hello, Rayrun!"?\n' +
+      '\n' +
+      '* When creating CSS selectors, ensure they are unique and specific enough to select only one element, even if there are multiple elements of the same type (like multiple h1 elements).\n' +
+      "* Avoid using generic tags like 'h1' alone. Instead, combine them with other attributes or structural relationships to form a unique selector.\n" +
+      '* You must not derive data from the page if you are able to do so by using one of the provided functions, e.g. locator_evaluate.\n' +
+      '\n' +
+      'Webpage snapshot:\n' +
+      '\n' +
+      '```\n' +
+      '\n' +
+      '    <h1>Hello, Rayrun!</h1>\n' +
+      '    <form id="search">\n' +
+      '      Search\n' +
+      '      <input type="text" name="query" data-testid="search-input" />\n' +
+      '    </form>\n' +
+      '    <div id="click-counter">\n' +
+      '      <p>Click count: <span id="current-count" data-testid="current-count">0</span></p>\n' +
+      '      <button id="click-button">Click me</button>\n' +
+      '      \n' +
+      '    </div>\n' +
+      '  \n' +
+      '\n' +
+      '```\n'
+  }
+]
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_f26f6d16-bb6a-4c75-9f99-48a2b0e7230f',
+      type: 'function',
+      function: [Object]
+    }
+  ]
+}
+> function { name: 'locateElement', arguments: '{"cssSelector":"h1"}' }
+> tool {
+  role: 'tool',
+  tool_call_id: 'call_0_f26f6d16-bb6a-4c75-9f99-48a2b0e7230f',
+  content: '{"elementId":"aDE="}'
+}
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_28886cde-4fc6-4d0e-a06e-27012a6a4a69',
+      type: 'function',
+      function: [Object]
+    }
+  ]
+}
+> function { name: 'locator_innerText', arguments: '{"elementId":"aDE="}' }
+> tool {
+  role: 'tool',
+  tool_call_id: 'call_0_28886cde-4fc6-4d0e-a06e-27012a6a4a69',
+  content: '{"innerText":"Hello, Rayrun!"}'
+}
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_b9e87c04-3d51-47a4-8a62-32b25c261918',
+      type: 'function',
+      function: [Object]
+    }
+  ]
+}
+> function {
+  name: 'expect_toBe',
+  arguments: '{"actual":"Hello, Rayrun!","expected":"Hello, Rayrun!"}'
+}
+> tool {
+  role: 'tool',
+  tool_call_id: 'call_0_b9e87c04-3d51-47a4-8a62-32b25c261918',
+  content: '{"actual":"Hello, Rayrun!","expected":"Hello, Rayrun!","success":true}'
+}
+> message {
+  role: 'assistant',
+  content: '',
+  ✓  1 [chromium] › tests\ai.spec.js:81:6 › ai: asserts (toBe) (10.1s)
+    {
+      index: 0,
+      id: 'call_0_fd913f57-bc76-4b61-8a36-11267bdf0608',
+      type: 'function',
+      function: [Object]
+    }
+  ]
+}
+> function { name: 'resultAssertion', arguments: '{"assertion":true}' }
+> message.tool_calls result, break
+> messages [
+  {
+    role: 'user',
+    content: 'This is your task: Is the contents of the header equal to "Hello, Rayrun!"?\n' +
+      '\n' +
+      '* When creating CSS selectors, ensure they are unique and specific enough to select only one element, even if there are multiple elements of the same type (like multiple h1 elements).\n' +
+      "* Avoid using generic tags like 'h1' alone. Instead, combine them with other attributes or structural relationships to form a unique selector.\n" +
+      '* You must not derive data from the page if you are able to do so by using one of the provided functions, e.g. locator_evaluate.\n' +
+      '\n' +
+      'Webpage snapshot:\n' +
+      '\n' +
+      '```\n' +
+      '\n' +
+      '    <h1>Hello, Rayrun!</h1>\n' +
+      '    <form id="search">\n' +
+      '      Search\n' +
+      '      <input type="text" name="query" data-testid="search-input" />\n' +
+      '    </form>\n' +
+      '    <div id="click-counter">\n' +
+      '      <p>Click count: <span id="current-count" data-testid="current-count">0</span></p>\n' +
+      '      <button id="click-button">Click me</button>\n' +
+      '      \n' +
+      '    </div>\n' +
+      '  \n' +
+      '\n' +
+      '```\n'
+  },
+  { role: 'assistant', content: '', tool_calls: [ [Object] ] },
+  {
+    role: 'tool',
+    tool_call_id: 'call_0_f26f6d16-bb6a-4c75-9f99-48a2b0e7230f',
+    content: '{"elementId":"aDE="}'
+  },
+  { role: 'assistant', content: '', tool_calls: [ [Object] ] },
+  {
+    role: 'tool',
+    tool_call_id: 'call_0_28886cde-4fc6-4d0e-a06e-27012a6a4a69',
+    content: '{"innerText":"Hello, Rayrun!"}'
+  },
+  { role: 'assistant', content: '', tool_calls: [ [Object] ] },
+  {
+    role: 'tool',
+    tool_call_id: 'call_0_b9e87c04-3d51-47a4-8a62-32b25c261918',
+    content: '{"actual":"Hello, Rayrun!","expected":"Hello, Rayrun!","success":true}'
+  }
+]
+> lastFunctionResult { assertion: true }
+
+  1 passed (12.2s)
+PS D:\ai\ai-playwright-tools>

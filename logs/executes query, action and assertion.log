@@ -1,0 +1,413 @@
+PS D:\ai\ai-playwright-tools> npm run test
+
+> ai-playwright-tools@1.0.0 test
+> playwright test
+
+
+Running 1 test using 1 worker
+
+     1 [chromium] › tests\ai.spec.js:93:6 › ai: executes query, action and assertion
+> model deepseek-chat
+> messages [
+  {
+    role: 'user',
+    content: 'This is your task: get the header text\n' +
+      '\n' +
+      '* When creating CSS selectors, ensure they are unique and specific enough to select only one element, even if there are multiple elements of the same type (like multiple h1 elements).\n' +
+      "* Avoid using generic tags like 'h1' alone. Instead, combine them with other attributes or structural relationships to form a unique selector.\n" +
+      '* You must not derive data from the page if you are able to do so by using one of the provided functions, e.g. locator_evaluate.\n' +
+      '\n' +
+      'Webpage snapshot:\n' +
+      '\n' +
+      '```\n' +
+      '\n' +
+      '    <h1>Hello, Rayrun!</h1>\n' +
+      '    <form id="search">\n' +
+      '      Search\n' +
+      '      <input type="text" name="query" data-testid="search-input" />\n' +
+      '    </form>\n' +
+      '    <div id="click-counter">\n' +
+      '      <p>Click count: <span id="current-count" data-testid="current-count">0</span></p>\n' +
+      '      <button id="click-button">Click me</button>\n' +
+      '      \n' +
+      '    </div>\n' +
+      '  \n' +
+      '\n' +
+      '```\n'
+  }
+]
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_8f0d4521-9fe0-49a8-9345-7fefa5597172',
+      type: 'function',
+      function: [Object]
+    }
+  ]
+}
+> function { name: 'locateElement', arguments: '{"cssSelector":"h1"}' }
+> tool {
+  role: 'tool',
+  tool_call_id: 'call_0_8f0d4521-9fe0-49a8-9345-7fefa5597172',
+  content: '{"elementId":"aDE="}'
+}
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_ef459c0c-e7ce-4a4b-979a-7da00ccaa36c',
+      type: 'function',
+      function: [Object]
+    }
+  ]
+}
+> function { name: 'locator_innerText', arguments: '{"elementId":"aDE="}' }
+> tool {
+  role: 'tool',
+  tool_call_id: 'call_0_ef459c0c-e7ce-4a4b-979a-7da00ccaa36c',
+  content: '{"innerText":"Hello, Rayrun!"}'
+}
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_e4023cdd-1a7e-43c9-9166-b5f9ea629bf5',
+      type: 'function',
+      function: [Object]
+    }
+  ]
+}
+> function { name: 'resultQuery', arguments: '{"query":"Hello, Rayrun!"}' }
+> message.tool_calls result, break
+> messages [
+  {
+    role: 'user',
+    content: 'This is your task: get the header text\n' +
+      '\n' +
+      '* When creating CSS selectors, ensure they are unique and specific enough to select only one element, even if there are multiple elements of the same type (like multiple h1 elements).\n' +
+      "* Avoid using generic tags like 'h1' alone. Instead, combine them with other attributes or structural relationships to form a unique selector.\n" +
+      '* You must not derive data from the page if you are able to do so by using one of the provided functions, e.g. locator_evaluate.\n' +
+      '\n' +
+      'Webpage snapshot:\n' +
+      '\n' +
+      '```\n' +
+      '\n' +
+      '    <h1>Hello, Rayrun!</h1>\n' +
+      '    <form id="search">\n' +
+      '      Search\n' +
+      '      <input type="text" name="query" data-testid="search-input" />\n' +
+      '    </form>\n' +
+      '    <div id="click-counter">\n' +
+      '      <p>Click count: <span id="current-count" data-testid="current-count">0</span></p>\n' +
+      '      <button id="click-button">Click me</button>\n' +
+      '      \n' +
+      '    </div>\n' +
+      '  \n' +
+      '\n' +
+      '```\n'
+  },
+  { role: 'assistant', content: '', tool_calls: [ [Object] ] },
+  {
+    role: 'tool',
+    tool_call_id: 'call_0_8f0d4521-9fe0-49a8-9345-7fefa5597172',
+    content: '{"elementId":"aDE="}'
+  },
+  { role: 'assistant', content: '', tool_calls: [ [Object] ] },
+  {
+    role: 'tool',
+    tool_call_id: 'call_0_ef459c0c-e7ce-4a4b-979a-7da00ccaa36c',
+    content: '{"innerText":"Hello, Rayrun!"}'
+  }
+]
+> lastFunctionResult { query: 'Hello, Rayrun!' }
+> model deepseek-chat
+> messages [
+  {
+    role: 'user',
+    content: 'This is your task: type "Hello, Rayrun!" in the search box\n' +
+      '\n' +
+      '* When creating CSS selectors, ensure they are unique and specific enough to select only one element, even if there are multiple elements of the same type (like multiple h1 elements).\n' +
+      "* Avoid using generic tags like 'h1' alone. Instead, combine them with other attributes or structural relationships to form a unique selector.\n" +
+      '* You must not derive data from the page if you are able to do so by using one of the provided functions, e.g. locator_evaluate.\n' +
+      '\n' +
+      'Webpage snapshot:\n' +
+      '\n' +
+      '```\n' +
+      '\n' +
+      '    <h1>Hello, Rayrun!</h1>\n' +
+      '    <form id="search">\n' +
+      '      Search\n' +
+      '      <input type="text" name="query" data-testid="search-input" />\n' +
+      '    </form>\n' +
+      '    <div id="click-counter">\n' +
+      '      <p>Click count: <span id="current-count" data-testid="current-count">0</span></p>\n' +
+      '      <button id="click-button">Click me</button>\n' +
+      '      \n' +
+      '    </div>\n' +
+      '  \n' +
+      '\n' +
+      '```\n'
+  }
+]
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_e6399612-55eb-47b9-8b96-52e1c64c77ad',
+      type: 'function',
+      function: [Object]
+    }
+  ]
+}
+> function {
+  name: 'locateElement',
+  arguments: `{"cssSelector":"input[data-testid='search-input']"}`
+}
+> tool {
+  role: 'tool',
+  tool_call_id: 'call_0_e6399612-55eb-47b9-8b96-52e1c64c77ad',
+  content: '{"elementId":"aW5wdXRbZGF0YS10ZXN0aWQ9J3NlYXJjaC1pbnB1dCdd"}'
+}
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_2b2d388a-7649-49c5-8377-a807acedc2a6',
+      type: 'function',
+      function: [Object]
+    }
+  ]
+}
+> function {
+  name: 'locator_fill',
+  arguments: '{"elementId":"aW5wdXRbZGF0YS10ZXN0aWQ9J3NlYXJjaC1pbnB1dCdd","value":"Hello, Rayrun!"}'
+}
+> tool {
+  role: 'tool',
+  tool_call_id: 'call_0_2b2d388a-7649-49c5-8377-a807acedc2a6',
+  content: '{"success":true}'
+}
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_06d9061d-8bff-4212-9f77-e3160ff8b94a',
+      type: 'function',
+      function: [Object]
+    }
+  ]
+}
+> function { name: 'resultAction', arguments: '{}' }
+> message.tool_calls result, break
+> messages [
+  {
+    role: 'user',
+    content: 'This is your task: type "Hello, Rayrun!" in the search box\n' +
+      '\n' +
+      '* When creating CSS selectors, ensure they are unique and specific enough to select only one element, even if there are multiple elements of the same type (like multiple h1 elements).\n' +
+      "* Avoid using generic tags like 'h1' alone. Instead, combine them with other attributes or structural relationships to form a unique selector.\n" +
+      '* You must not derive data from the page if you are able to do so by using one of the provided functions, e.g. locator_evaluate.\n' +
+      '\n' +
+      'Webpage snapshot:\n' +
+      '\n' +
+      '```\n' +
+      '\n' +
+      '    <h1>Hello, Rayrun!</h1>\n' +
+      '    <form id="search">\n' +
+      '      Search\n' +
+      '      <input type="text" name="query" data-testid="search-input" />\n' +
+      '    </form>\n' +
+      '    <div id="click-counter">\n' +
+      '      <p>Click count: <span id="current-count" data-testid="current-count">0</span></p>\n' +
+      '      <button id="click-button">Click me</button>\n' +
+      '      \n' +
+      '    </div>\n' +
+      '  \n' +
+      '\n' +
+      '```\n'
+  },
+  { role: 'assistant', content: '', tool_calls: [ [Object] ] },
+  {
+    role: 'tool',
+    tool_call_id: 'call_0_e6399612-55eb-47b9-8b96-52e1c64c77ad',
+    content: '{"elementId":"aW5wdXRbZGF0YS10ZXN0aWQ9J3NlYXJjaC1pbnB1dCdd"}'
+  },
+  { role: 'assistant', content: '', tool_calls: [ [Object] ] },
+  {
+    role: 'tool',
+    tool_call_id: 'call_0_2b2d388a-7649-49c5-8377-a807acedc2a6',
+    content: '{"success":true}'
+  }
+]
+> lastFunctionResult {}
+> model deepseek-chat
+> messages [
+  {
+    role: 'user',
+    content: 'This is your task: is the contents of the search box equal to "Hello, Rayrun!"?\n' +
+      '\n' +
+      '* When creating CSS selectors, ensure they are unique and specific enough to select only one element, even if there are multiple elements of the same type (like multiple h1 elements).\n' +
+      "* Avoid using generic tags like 'h1' alone. Instead, combine them with other attributes or structural relationships to form a unique selector.\n" +
+      '* You must not derive data from the page if you are able to do so by using one of the provided functions, e.g. locator_evaluate.\n' +
+      '\n' +
+      'Webpage snapshot:\n' +
+      '\n' +
+      '```\n' +
+      '\n' +
+      '    <h1>Hello, Rayrun!</h1>\n' +
+      '    <form id="search">\n' +
+      '      Search\n' +
+      '      <input type="text" name="query" data-testid="search-input" />\n' +
+      '    </form>\n' +
+      '    <div id="click-counter">\n' +
+      '      <p>Click count: <span id="current-count" data-testid="current-count">0</span></p>\n' +
+      '      <button id="click-button">Click me</button>\n' +
+      '      \n' +
+      '    </div>\n' +
+      '  \n' +
+      '\n' +
+      '```\n'
+  }
+]
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_a8ca6acb-7415-43a9-9fb5-f7206c28888d',
+      type: 'function',
+      function: [Object]
+    }
+  ]
+}
+> function {
+  name: 'locateElement',
+  arguments: `{"cssSelector":"input[data-testid='search-input']"}`
+}
+> tool {
+  role: 'tool',
+  tool_call_id: 'call_0_a8ca6acb-7415-43a9-9fb5-f7206c28888d',
+  content: '{"elementId":"aW5wdXRbZGF0YS10ZXN0aWQ9J3NlYXJjaC1pbnB1dCdd"}'
+}
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_3e364640-5f3e-485f-8d8c-ee16915243c9',
+      type: 'function',
+      function: [Object]
+    }
+  ]
+}
+> function {
+  name: 'locator_inputValue',
+  arguments: '{"elementId":"aW5wdXRbZGF0YS10ZXN0aWQ9J3NlYXJjaC1pbnB1dCdd"}'
+}
+> tool {
+  role: 'tool',
+  tool_call_id: 'call_0_3e364640-5f3e-485f-8d8c-ee16915243c9',
+  content: '{"inputValue":"Hello, Rayrun!"}'
+}
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_db76364f-ed81-4709-90a9-1749826d837d',
+      type: 'function',
+      function: [Object]
+    }
+  ]
+}
+> function {
+  name: 'expect_toBe',
+  arguments: '{"actual":"Hello, Rayrun!","expected":"Hello, Rayrun!"}'
+}
+> tool {
+  role: 'tool',
+  tool_call_id: 'call_0_db76364f-ed81-4709-90a9-1749826d837d',
+  ✓  1 [chromium] › tests\ai.spec.js:93:6 › ai: executes query, action and assertion (55.1s)
+}
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_be567749-93fa-41c8-8e2c-e06aff1267e0',
+      type: 'function',
+      function: [Object]
+    }
+  ]
+}
+> function { name: 'resultAssertion', arguments: '{"assertion":true}' }
+> message.tool_calls result, break
+> messages [
+  {
+    role: 'user',
+    content: 'This is your task: is the contents of the search box equal to "Hello, Rayrun!"?\n' +
+      '\n' +
+      '* When creating CSS selectors, ensure they are unique and specific enough to select only one element, even if there are multiple elements of the same type (like multiple h1 elements).\n' +
+      "* Avoid using generic tags like 'h1' alone. Instead, combine them with other attributes or structural relationships to form a unique selector.\n" +
+      '* You must not derive data from the page if you are able to do so by using one of the provided functions, e.g. locator_evaluate.\n' +
+      '\n' +
+      'Webpage snapshot:\n' +
+      '\n' +
+      '```\n' +
+      '\n' +
+      '    <h1>Hello, Rayrun!</h1>\n' +
+      '    <form id="search">\n' +
+      '      Search\n' +
+      '      <input type="text" name="query" data-testid="search-input" />\n' +
+      '    </form>\n' +
+      '    <div id="click-counter">\n' +
+      '      <p>Click count: <span id="current-count" data-testid="current-count">0</span></p>\n' +
+      '      <button id="click-button">Click me</button>\n' +
+      '      \n' +
+      '    </div>\n' +
+      '  \n' +
+      '\n' +
+      '```\n'
+  },
+  { role: 'assistant', content: '', tool_calls: [ [Object] ] },
+  {
+    role: 'tool',
+    tool_call_id: 'call_0_a8ca6acb-7415-43a9-9fb5-f7206c28888d',
+    content: '{"elementId":"aW5wdXRbZGF0YS10ZXN0aWQ9J3NlYXJjaC1pbnB1dCdd"}'
+  },
+  { role: 'assistant', content: '', tool_calls: [ [Object] ] },
+  {
+    role: 'tool',
+    tool_call_id: 'call_0_3e364640-5f3e-485f-8d8c-ee16915243c9',
+    content: '{"inputValue":"Hello, Rayrun!"}'
+  },
+  { role: 'assistant', content: '', tool_calls: [ [Object] ] },
+  {
+    role: 'tool',
+    tool_call_id: 'call_0_db76364f-ed81-4709-90a9-1749826d837d',
+    content: '{"actual":"Hello, Rayrun!","expected":"Hello, Rayrun!","success":true}'
+  }
+]
+> lastFunctionResult { assertion: true }
+
+  Slow test file: [chromium] › tests\ai.spec.js (55.1s)
+  Consider running tests from slow files in parallel, see https://playwright.dev/docs/test-parallel.
+  1 passed (57.3s)
+PS D:\ai\ai-playwright-tools>

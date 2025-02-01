@@ -1,0 +1,137 @@
+PS D:\ai\ai-playwright-tools> npm run test
+
+> ai-playwright-tools@1.0.0 test
+> playwright test
+
+
+Running 1 test using 1 worker
+
+     1 [chromium] › tests\ai.spec.js:27:6 › ai: executes query using locator_evaluate - second
+> model deepseek-chat
+> messages [
+  {
+    role: 'user',
+    content: 'This is your task: get the second letter of the header text\n' +
+      '\n' +
+      '* When creating CSS selectors, ensure they are unique and specific enough to select only one element, even if there are multiple elements of the same type (like multiple h1 elements).\n' +
+      "* Avoid using generic tags like 'h1' alone. Instead, combine them with other attributes or structural relationships to form a unique selector.\n" +
+      '* You must not derive data from the page if you are able to do so by using one of the provided functions, e.g. locator_evaluate.\n' +
+      '\n' +
+      'Webpage snapshot:\n' +
+      '\n' +
+      '```\n' +
+      '\n' +
+      '    <h1>Hello, Rayrun!</h1>\n' +
+      '    <form id="search">\n' +
+      '      Search\n' +
+      '      <input type="text" name="query" data-testid="search-input" />\n' +
+      '    </form>\n' +
+      '    <div id="click-counter">\n' +
+      '      <p>Click count: <span id="current-count" data-testid="current-count">0</span></p>\n' +
+      '      <button id="click-button">Click me</button>\n' +
+      '      \n' +
+      '    </div>\n' +
+      '  \n' +
+      '\n' +
+      '```\n'
+  }
+]
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_21291f19-906b-4c49-9b21-6847ff17e425',
+      type: 'function',
+      function: [Object]
+    }
+  ]
+}
+> function { name: 'locateElement', arguments: '{"cssSelector":"h1"}' }
+> tool {
+  role: 'tool',
+  tool_call_id: 'call_0_21291f19-906b-4c49-9b21-6847ff17e425',
+  content: '{"elementId":"aDE="}'
+}
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_380e76f2-1e19-4ceb-9051-4b446a4afa74',
+      type: 'function',
+      function: [Object]
+    }
+  ]
+}
+> function {
+  name: 'locator_evaluate',
+  arguments: '{"elementId":"aDE=","pageFunction":"node => node.innerText[1]"}'
+}
+> tool {
+  role: 'tool',
+  ✓  1 [chromium] › tests\ai.spec.js:27:6 › ai: executes query using locator_evaluate - second (16.3s)
+  content: '{"result":"e"}'
+}
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_aea39e47-eee7-4dd7-b2df-d998d4fecaa6',
+      type: 'function',
+      function: [Object]
+    }
+  ]
+}
+> function { name: 'resultQuery', arguments: '{"query":"e"}' }
+> message.tool_calls result, break
+> messages [
+  {
+    role: 'user',
+    content: 'This is your task: get the second letter of the header text\n' +
+      '\n' +
+      '* When creating CSS selectors, ensure they are unique and specific enough to select only one element, even if there are multiple elements of the same type (like multiple h1 elements).\n' +
+      "* Avoid using generic tags like 'h1' alone. Instead, combine them with other attributes or structural relationships to form a unique selector.\n" +
+      '* You must not derive data from the page if you are able to do so by using one of the provided functions, e.g. locator_evaluate.\n' +
+      '\n' +
+      'Webpage snapshot:\n' +
+      '\n' +
+      '```\n' +
+      '\n' +
+      '    <h1>Hello, Rayrun!</h1>\n' +
+      '    <form id="search">\n' +
+      '      Search\n' +
+      '      <input type="text" name="query" data-testid="search-input" />\n' +
+      '    </form>\n' +
+      '    <div id="click-counter">\n' +
+      '      <p>Click count: <span id="current-count" data-testid="current-count">0</span></p>\n' +
+      '      <button id="click-button">Click me</button>\n' +
+      '      \n' +
+      '    </div>\n' +
+      '  \n' +
+      '\n' +
+      '```\n'
+  },
+  { role: 'assistant', content: '', tool_calls: [ [Object] ] },
+  {
+    role: 'tool',
+    tool_call_id: 'call_0_21291f19-906b-4c49-9b21-6847ff17e425',
+    content: '{"elementId":"aDE="}'
+  },
+  { role: 'assistant', content: '', tool_calls: [ [Object] ] },
+  {
+    role: 'tool',
+    tool_call_id: 'call_0_380e76f2-1e19-4ceb-9051-4b446a4afa74',
+    content: '{"result":"e"}'
+  }
+]
+> lastFunctionResult { query: 'e' }
+
+  Slow test file: [chromium] › tests\ai.spec.js (16.3s)
+  Consider running tests from slow files in parallel, see https://playwright.dev/docs/test-parallel.
+  1 passed (18.0s)
+PS D:\ai\ai-playwright-tools>

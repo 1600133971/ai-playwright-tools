@@ -1,0 +1,71 @@
+PS D:\ai\ai-playwright-tools> npm run test
+
+> ai-playwright-tools@1.0.0 test
+> playwright test
+
+
+Running 1 test using 1 worker
+
+  ✓  1 [chromium] › tests\ai.spec.js:129:6 › ai: navigate to (page_goto) (9.5s)                                                                                                            > model deepseek-chat
+> messages [
+  {
+    role: 'user',
+    content: 'This is your task: navigate to "http://127.0.0.1:3000/"\n' +
+      '\n' +
+      '* When creating CSS selectors, ensure they are unique and specific enough to select only one element, even if there are multiple elements of the same type (like multiple h1 elements).\n' +
+      "* Avoid using generic tags like 'h1' alone. Instead, combine them with other attributes or structural relationships to form a unique selector.\n" +
+      '* You must not derive data from the page if you are able to do so by using one of the provided functions, e.g. locator_evaluate.\n' +
+      '\n' +
+      'Webpage snapshot:\n' +
+      '\n' +
+      '```\n' +
+      '\n' +
+      '```\n'
+  }
+]
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_98c4a2b1-8e2b-4ac4-8264-7e70e7009b76',
+      type: 'function',
+      function: [Object]
+    }
+  ]
+}
+> function { name: 'page_goto', arguments: '{"url":"http://127.0.0.1:3000/"}' }
+> tool {
+  role: 'tool',
+  tool_call_id: 'call_0_98c4a2b1-8e2b-4ac4-8264-7e70e7009b76',
+  content: '{"success":true}'
+}
+> message { role: 'assistant', content: '' }
+> message.tool_calls null, break
+> messages [
+  {
+    role: 'user',
+    content: 'This is your task: navigate to "http://127.0.0.1:3000/"\n' +
+      '\n' +
+      '* When creating CSS selectors, ensure they are unique and specific enough to select only one element, even if there are multiple elements of the same type (like multiple h1 elements).\n' +
+      "* Avoid using generic tags like 'h1' alone. Instead, combine them with other attributes or structural relationships to form a unique selector.\n" +
+      '* You must not derive data from the page if you are able to do so by using one of the provided functions, e.g. locator_evaluate.\n' +
+      '\n' +
+      'Webpage snapshot:\n' +
+      '\n' +
+      '```\n' +
+      '\n' +
+      '```\n'
+  },
+  { role: 'assistant', content: '', tool_calls: [ [Object] ] },
+  {
+    role: 'tool',
+    tool_call_id: 'call_0_98c4a2b1-8e2b-4ac4-8264-7e70e7009b76',
+    content: '{"success":true}'
+  }
+]
+> lastFunctionResult null
+
+  1 passed (11.5s)
+PS D:\ai\ai-playwright-tools>
