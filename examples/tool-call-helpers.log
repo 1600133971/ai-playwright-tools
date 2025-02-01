@@ -1,0 +1,155 @@
+PS D:\ai\ai-playwright-tools\examples> node .\tool-call-helpers.js
+> message {
+  role: 'assistant',
+  content: null,
+  refusal: null,
+  tool_calls: [
+    {
+      id: 'call_0_c1e60342-541e-480b-a77e-b2178c2873c4',
+      type: 'function',
+      function: [Object]
+    }
+  ],
+  parsed: null
+}
+> functionCall { name: 'search', arguments: '{"name":"To Kill a Mockingbird"}' }
+> message {
+  role: 'tool',
+  tool_call_id: 'call_0_c1e60342-541e-480b-a77e-b2178c2873c4',
+  content: '[{"name":"To Kill a Mockingbird","id":"a1"}]'
+}
+> functionCallResult [{"name":"To Kill a Mockingbird","id":"a1"}]
+> message {
+  role: 'assistant',
+  content: null,
+  refusal: null,
+  tool_calls: [
+    {
+      id: 'call_0_d9c93c51-0bbe-4fb5-90a9-ceca580356db',
+      type: 'function',
+      function: [Object]
+    }
+  ],
+  parsed: null
+}
+> functionCall { name: 'get', arguments: '{"id":"a1"}' }
+> message {
+  role: 'tool',
+  tool_call_id: 'call_0_d9c93c51-0bbe-4fb5-90a9-ceca580356db',
+  content: '{"id":"a1","name":"To Kill a Mockingbird","genre":"historical","description":"Compassionate, dramatic, and deeply moving, \\"To Kill A Mockingbird\\" takes readers to the roots of human behavior - to innocence and experience, kindness and cruelty, love and hatred, humor and pathos. Now with over 18 million copies in print and translated into forty languages, this regional story by a young Alabama woman claims universal appeal. Harper Lee always considered her book to be a simple love story. Today it is regarded as a masterpiece of American literature."}'
+}
+> functionCallResult {"id":"a1","name":"To Kill a Mockingbird","genre":"historical","description":"Compassionate, dramatic, and deeply moving, \"To Kill A Mockingbird\" takes readers to the roots of human behavior - to innocence and experience, kindness and cruelty, love and hatred, humor and pathos. Now with over 18 million copies in print and translated into forty languages, this regional story by a young Alabama woman claims universal appeal. Harper Lee always considered her book to be a simple love story. Today it is regarded as a masterpiece of American literature."}
+To Kill a Mockingbird is a classic novel that explores themes of racial injustice, moral growth, and human compassion. If you enjoyed this book, I recommend reading **The Help** by Kathryn Stockett.
+
+**Why?**
+- **Themes of Social Justice**: Like To Kill a Mockingbird, The Help deals with issues of racial inequality and social justice, set in the American South.
+- **Strong Moral Lessons**: Both books offer profound moral lessons and explore the complexities of human behavior and ethics.
+- **Character Development**: The Help features strong, well-developed characters who undergo significant personal growth, much like Scout and Atticus Finch in To Kill a Mockingbird.
+- **Historical Context**: Both novels are set in the mid-20th century and provide a deep dive into the social and cultural issues of their respective times.
+
+Would you like more information about The Help or any other recommendations?> message {
+  role: 'assistant',
+  content: 'To Kill a Mockingbird is a classic novel that explores themes of racial injustice, moral growth, and human compassion. If you enjoyed this book, I recommend reading **The Help** by Kathryn Stockett. \n' +
+    '\n' +
+    '**Why?**\n' +
+    '- **Themes of Social Justice**: Like To Kill a Mockingbird, The Help deals with issues of racial inequality and social justice, set in the American South.\n' +
+    '- **Strong Moral Lessons**: Both books offer profound moral lessons and explore the complexities of human behavior and ethics.\n' +
+    '- **Character Development**: The Help features strong, well-developed characters who undergo significant personal growth, much like Scout and Atticus Finch in To Kill a Mockingbird.\n' +
+    '- **Historical Context**: Both novels are set in the mid-20th century and provide a deep dive into the social and cultural issues of their respective times.\n' +
+    '\n' +
+    'Would you like more information about The Help or any other recommendations?',
+  refusal: null,
+  parsed: null,
+  tool_calls: []
+}
+
+> messages
+[
+  {
+    role: 'system',
+    content: 'Please use our book database, which you can access using functions to answer the following questions.'
+  },
+  {
+    role: 'user',
+    content: 'I really enjoyed reading To Kill a Mockingbird, could you recommend me a book that is similar and tell me why?'
+  },
+  {
+    role: 'assistant',
+    content: null,
+    refusal: null,
+    tool_calls: [ [Object] ],
+    parsed: null
+  },
+  {
+    role: 'tool',
+    tool_call_id: 'call_0_c1e60342-541e-480b-a77e-b2178c2873c4',
+    content: '[{"name":"To Kill a Mockingbird","id":"a1"}]'
+  },
+  {
+    role: 'assistant',
+    content: null,
+    refusal: null,
+    tool_calls: [ [Object] ],
+    parsed: null
+  },
+  {
+    role: 'tool',
+    tool_call_id: 'call_0_d9c93c51-0bbe-4fb5-90a9-ceca580356db',
+    content: '{"id":"a1","name":"To Kill a Mockingbird","genre":"historical","description":"Compassionate, dramatic, and deeply moving, \\"To Kill A Mockingbird\\" takes readers to the roots of human behavior - to innocence and experience, kindness and cruelty, love and hatred, humor and pathos. Now with over 18 million copies in print and translated into forty languages, this regional story by a young Alabama woman claims universal appeal. Harper Lee always considered her book to be a simple love story. Today it is regarded as a masterpiece of American literature."}'
+  },
+  {
+    role: 'assistant',
+    content: 'To Kill a Mockingbird is a classic novel that explores themes of racial injustice, moral growth, and human compassion. If you enjoyed this book, I recommend reading **The Help** by Kathryn Stockett. \n' +
+      '\n' +
+      '**Why?**\n' +
+      '- **Themes of Social Justice**: Like To Kill a Mockingbird, The Help deals with issues of racial inequality and social justice, set in the American South.\n' +
+      '- **Strong Moral Lessons**: Both books offer profound moral lessons and explore the complexities of human behavior and ethics.\n' +
+      '- **Character Development**: The Help features strong, well-developed characters who undergo significant personal growth, much like Scout and Atticus Finch in To Kill a Mockingbird.\n' +
+      '- **Historical Context**: Both novels are set in the mid-20th century and provide a deep dive into the social and cultural issues of their respective times.\n' +
+      '\n' +
+      'Would you like more information about The Help or any other recommendations?',
+    refusal: null,
+    parsed: null,
+    tool_calls: []
+  }
+]
+
+> final chat completion
+{
+  object: 'chat.completion',
+  usage: {
+    prompt_tokens: 517,
+    completion_tokens: 182,
+    total_tokens: 699,
+    prompt_tokens_details: { cached_tokens: 0 },
+    prompt_cache_hit_tokens: 0,
+    prompt_cache_miss_tokens: 517
+  },
+  id: '794cb979-888e-495d-96e2-df70b08cb052',
+  choices: [
+    {
+      message: {
+        role: 'assistant',
+        content: 'To Kill a Mockingbird is a classic novel that explores themes of racial injustice, moral growth, and human compassion. If you enjoyed this book, I recommend reading **The Help** by Kathryn Stockett. \n' +
+          '\n' +
+          '**Why?**\n' +
+          '- **Themes of Social Justice**: Like To Kill a Mockingbird, The Help deals with issues of racial inequality and social justice, set in the American South.\n' +
+          '- **Strong Moral Lessons**: Both books offer profound moral lessons and explore the complexities of human behavior and ethics.\n' +
+          '- **Character Development**: The Help features strong, well-developed characters who undergo significant personal growth, much like Scout and Atticus Finch in To Kill a Mockingbird.\n' +
+          '- **Historical Context**: Both novels are set in the mid-20th century and provide a deep dive into the social and cultural issues of their respective times.\n' +
+          '\n' +
+          'Would you like more information about The Help or any other recommendations?',
+        refusal: null,
+        parsed: null,
+        tool_calls: []
+      },
+      finish_reason: 'stop',
+      index: 0,
+      logprobs: null
+    }
+  ],
+  created: 1738044783,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4'
+}
+PS D:\ai\ai-playwright-tools\examples>

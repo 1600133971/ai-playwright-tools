@@ -1,0 +1,128 @@
+PS D:\ai\ai-playwright-tools\examples> node .\function-call-helpers-zod.js
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_80001b65-5720-4413-b009-074404b4d2a2',
+      type: 'function',
+      function: [Object]
+    }
+  ],
+  parsed: null
+}
+> message {
+  role: 'tool',
+  tool_call_id: 'call_0_80001b65-5720-4413-b009-074404b4d2a2',
+  content: '[{"name":"To Kill a Mockingbird","id":"a1"}]'
+}
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_a1e1bdfb-dfe2-4629-a9c5-ef73630b33a7',
+      type: 'function',
+      function: [Object]
+    }
+  ],
+  parsed: null
+}
+> message {
+  role: 'tool',
+  tool_call_id: 'call_0_a1e1bdfb-dfe2-4629-a9c5-ef73630b33a7',
+  content: '{"id":"a1","name":"To Kill a Mockingbird","genre":"historical","description":"Compassionate, dramatic, and deeply moving, \\"To Kill A Mockingbird\\" takes readers to the roots of human behavior - to innocence and experience, kindness and cruelty, love and hatred, humor and pathos. Now with over 18 million copies in print and translated into forty languages, this regional story by a young Alabama woman claims universal appeal. Harper Lee always considered her book to be a simple love story. Today it is regarded as a masterpiece of American literature."}'
+}
+> message {
+  role: 'assistant',
+  content: "Based on your enjoyment of *To Kill a Mockingbird*, I recommend *The Help* by Kathryn Stockett. Here's why:\n" +
+    '\n' +
+    '1. **Genre**: Both books fall under the historical genre, providing rich, detailed backdrops that reflect significant periods in history.\n' +
+    '2. **Themes**: *The Help* explores themes of racial injustice, moral growth, and empathy, much like *To Kill a Mockingbird*. Both books delve into the complexities of human behavior and societal norms.\n' +
+    '3. **Character Development**: Both novels feature strong, memorable characters who undergo significant personal growth and challenge societal expectations.\n' +
+    '4. **Emotional Impact**: Just as *To Kill a Mockingbird* is known for its emotional depth and ability to move readers, *The Help* also offers a poignant and compelling narrative that resonates deeply with its audience.\n' +
+    '\n' +
+    "*The Help* is set in the 1960s in Jackson, Mississippi, and follows the lives of African American maids and their relationships with the white families they work for. It provides a powerful look at the civil rights movement and the personal stories of those who lived through it. I think you'll find it both engaging and thought-provoking, much like *To Kill a Mockingbird*.",
+  tool_calls: [],
+  parsed: null
+}
+Based on your enjoyment of *To Kill a Mockingbird*, I recommend *The Help* by Kathryn Stockett. Here's why:
+
+1. **Genre**: Both books fall under the historical genre, providing rich, detailed backdrops that reflect significant periods in history.
+2. **Themes**: *The Help* explores themes of racial injustice, moral growth, and empathy, much like *To Kill a Mockingbird*. Both books delve into the complexities of human behavior and societal norms.
+3. **Character Development**: Both novels feature strong, memorable characters who undergo significant personal growth and challenge societal expectations.
+4. **Emotional Impact**: Just as *To Kill a Mockingbird* is known for its emotional depth and ability to move readers, *The Help* also offers a poignant and compelling narrative that resonates deeply with its audience.
+
+*The Help* is set in the 1960s in Jackson, Mississippi, and follows the lives of African American maids and their relationships with the white families they work for. It provides a powerful look at the civil rights movement and the personal stories of those who lived through it. I think you'll find it both engaging and thought-provoking, much like *To Kill a Mockingbird*.
+> result {
+  id: '91739771-8476-4fa8-a0a4-7303004ec9e8',
+  object: 'chat.completion',
+  created: 1738051078,
+  model: 'deepseek-chat',
+  choices: [
+    {
+      index: 0,
+      message: [Object],
+      logprobs: null,
+      finish_reason: 'stop'
+    }
+  ],
+  usage: {
+    prompt_tokens: 628,
+    completion_tokens: 250,
+    total_tokens: 878,
+    prompt_tokens_details: { cached_tokens: 128 },
+    prompt_cache_hit_tokens: 128,
+    prompt_cache_miss_tokens: 500
+  },
+  system_fingerprint: 'fp_3a5770e1b4'
+}
+
+> messages [
+  {
+    role: 'system',
+    content: 'Please use our book database, which you can access using functions to answer the following questions.'
+  },
+  {
+    role: 'user',
+    content: 'I really enjoyed reading To Kill a Mockingbird, could you recommend me a book that is similar and tell me why?'
+  },
+  {
+    role: 'assistant',
+    content: '',
+    tool_calls: [ [Object] ],
+    parsed: null
+  },
+  {
+    role: 'tool',
+    tool_call_id: 'call_0_80001b65-5720-4413-b009-074404b4d2a2',
+    content: '[{"name":"To Kill a Mockingbird","id":"a1"}]'
+  },
+  {
+    role: 'assistant',
+    content: '',
+    tool_calls: [ [Object] ],
+    parsed: null
+  },
+  {
+    role: 'tool',
+    tool_call_id: 'call_0_a1e1bdfb-dfe2-4629-a9c5-ef73630b33a7',
+    content: '{"id":"a1","name":"To Kill a Mockingbird","genre":"historical","description":"Compassionate, dramatic, and deeply moving, \\"To Kill A Mockingbird\\" takes readers to the roots of human behavior - to innocence and experience, kindness and cruelty, love and hatred, humor and pathos. Now with over 18 million copies in print and translated into forty languages, this regional story by a young Alabama woman claims universal appeal. Harper Lee always considered her book to be a simple love story. Today it is regarded as a masterpiece of American literature."}'
+  },
+  {
+    role: 'assistant',
+    content: "Based on your enjoyment of *To Kill a Mockingbird*, I recommend *The Help* by Kathryn Stockett. Here's why:\n" +
+      '\n' +
+      '1. **Genre**: Both books fall under the historical genre, providing rich, detailed backdrops that reflect significant periods in history.\n' +
+      '2. **Themes**: *The Help* explores themes of racial injustice, moral growth, and empathy, much like *To Kill a Mockingbird*. Both books delve into the complexities of human behavior and societal norms.\n' +
+      '3. **Character Development**: Both novels feature strong, memorable characters who undergo significant personal growth and challenge societal expectations.\n' +
+      '4. **Emotional Impact**: Just as *To Kill a Mockingbird* is known for its emotional depth and ability to move readers, *The Help* also offers a poignant and compelling narrative that resonates deeply with its audience.\n' +
+      '\n' +
+      "*The Help* is set in the 1960s in Jackson, Mississippi, and follows the lives of African American maids and their relationships with the white families they work for. It provides a powerful look at the civil rights movement and the personal stories of those who lived through it. I think you'll find it both engaging and thought-provoking, much like *To Kill a Mockingbird*.",
+    tool_calls: [],
+    parsed: null
+  }
+]
+PS D:\ai\ai-playwright-tools\examples>

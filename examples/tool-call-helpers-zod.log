@@ -1,0 +1,151 @@
+PS D:\ai\ai-playwright-tools\examples> node .\tool-call-helpers-zod.js
+> message {
+  role: 'assistant',
+  content: null,
+  refusal: null,
+  tool_calls: [
+    {
+      id: 'call_0_b40422e5-18c7-49ce-9802-3540e31b0061',
+      type: 'function',
+      function: [Object]
+    }
+  ],
+  parsed: null
+}
+> functionCall { name: 'searchBooks', arguments: '{"name":"To Kill a Mockingbird"}' }
+> message {
+  role: 'tool',
+  tool_call_id: 'call_0_b40422e5-18c7-49ce-9802-3540e31b0061',
+  content: '[{"name":"To Kill a Mockingbird","id":"a1"}]'
+}
+> functionCallResult [{"name":"To Kill a Mockingbird","id":"a1"}]
+> message {
+  role: 'assistant',
+  content: null,
+  refusal: null,
+  tool_calls: [
+    {
+      id: 'call_0_6120490d-747b-40ff-8ddb-953d94f6bb7b',
+      type: 'function',
+      function: [Object]
+    }
+  ],
+  parsed: null
+}
+> functionCall { name: 'getBook', arguments: '{"id":"a1"}' }
+> message {
+  role: 'tool',
+  tool_call_id: 'call_0_6120490d-747b-40ff-8ddb-953d94f6bb7b',
+  content: '{"id":"a1","name":"To Kill a Mockingbird","genre":"historical","description":"Compassionate, dramatic, and deeply moving, \\"To Kill A Mockingbird\\" takes readers to the roots of human behavior - to innocence and experience, kindness and cruelty, love and hatred, humor and pathos. Now with over 18 million copies in print and translated into forty languages, this regional story by a young Alabama woman claims universal appeal. Harper Lee always considered her book to be a simple love story. Today it is regarded as a masterpiece of American literature."}'
+}
+> functionCallResult {"id":"a1","name":"To Kill a Mockingbird","genre":"historical","description":"Compassionate, dramatic, and deeply moving, \"To Kill A Mockingbird\" takes readers to the roots of human behavior - to innocence and experience, kindness and cruelty, love and hatred, humor and pathos. Now with over 18 million copies in print and translated into forty languages, this regional story by a young Alabama woman claims universal appeal. Harper Lee always considered her book to be a simple love story. Today it is regarded as a masterpiece of American literature."}
+To Kill a Mockingbird is a classic piece of American literature that explores themes of racial injustice, moral growth, and human compassion. If you enjoyed this book, I recommend reading "The Help" by Kathryn Stockett.
+
+### Why "The Help"?
+- **Themes of Social Justice**: Like "To Kill a Mockingbird," "The Help" delves into issues of racial inequality and social justice, set against the backdrop of the American South.
+- **Moral Growth**: Both books feature characters who undergo significant moral growth and challenge societal norms.
+- **Human Compassion**: "The Help" also emphasizes the importance of empathy and understanding across racial divides.
+
+Would you like more information about "The Help"?> message {
+  role: 'assistant',
+  content: 'To Kill a Mockingbird is a classic piece of American literature that explores themes of racial injustice, moral growth, and human compassion. If you enjoyed this book, I recommend reading "The Help" by Kathryn Stockett. \n' +
+    '\n' +
+    '### Why "The Help"?\n' +
+    '- **Themes of Social Justice**: Like "To Kill a Mockingbird," "The Help" delves into issues of racial inequality and social justice, set against the backdrop of the American South.\n' +
+    '- **Moral Growth**: Both books feature characters who undergo significant moral growth and challenge societal norms.\n' +
+    '- **Human Compassion**: "The Help" also emphasizes the importance of empathy and understanding across racial divides.\n' +
+    '\n' +
+    'Would you like more information about "The Help"?',
+  refusal: null,
+  parsed: null,
+  tool_calls: []
+}
+
+> messages
+[
+  {
+    role: 'system',
+    content: 'Please use our book database, which you can access using functions to answer the following questions.'
+  },
+  {
+    role: 'user',
+    content: 'I really enjoyed reading To Kill a Mockingbird, could you recommend me a book that is similar and tell me why?'
+  },
+  {
+    role: 'assistant',
+    content: null,
+    refusal: null,
+    tool_calls: [ [Object] ],
+    parsed: null
+  },
+  {
+    role: 'tool',
+    tool_call_id: 'call_0_b40422e5-18c7-49ce-9802-3540e31b0061',
+    content: '[{"name":"To Kill a Mockingbird","id":"a1"}]'
+  },
+  {
+    role: 'assistant',
+    content: null,
+    refusal: null,
+    tool_calls: [ [Object] ],
+    parsed: null
+  },
+  {
+    role: 'tool',
+    tool_call_id: 'call_0_6120490d-747b-40ff-8ddb-953d94f6bb7b',
+    content: '{"id":"a1","name":"To Kill a Mockingbird","genre":"historical","description":"Compassionate, dramatic, and deeply moving, \\"To Kill A Mockingbird\\" takes readers to the roots of human behavior - to innocence and experience, kindness and cruelty, love and hatred, humor and pathos. Now with over 18 million copies in print and translated into forty languages, this regional story by a young Alabama woman claims universal appeal. Harper Lee always considered her book to be a simple love story. Today it is regarded as a masterpiece of American literature."}'
+  },
+  {
+    role: 'assistant',
+    content: 'To Kill a Mockingbird is a classic piece of American literature that explores themes of racial injustice, moral growth, and human compassion. If you enjoyed this book, I recommend reading "The Help" by Kathryn Stockett. \n' +
+      '\n' +
+      '### Why "The Help"?\n' +
+      '- **Themes of Social Justice**: Like "To Kill a Mockingbird," "The Help" delves into issues of racial inequality and social justice, set against the backdrop of the American South.\n' +
+      '- **Moral Growth**: Both books feature characters who undergo significant moral growth and challenge societal norms.\n' +
+      '- **Human Compassion**: "The Help" also emphasizes the importance of empathy and understanding across racial divides.\n' +
+      '\n' +
+      'Would you like more information about "The Help"?',
+    refusal: null,
+    parsed: null,
+    tool_calls: []
+  }
+]
+
+> final chat completion
+{
+  object: 'chat.completion',
+  usage: {
+    prompt_tokens: 636,
+    completion_tokens: 144,
+    total_tokens: 780,
+    prompt_tokens_details: { cached_tokens: 448 },
+    prompt_cache_hit_tokens: 448,
+    prompt_cache_miss_tokens: 188
+  },
+  id: '634818d3-6547-4f7f-8b0c-935afa093682',
+  choices: [
+    {
+      message: {
+        role: 'assistant',
+        content: 'To Kill a Mockingbird is a classic piece of American literature that explores themes of racial injustice, moral growth, and human compassion. If you enjoyed this book, I recommend reading "The Help" by Kathryn Stockett. \n' +
+          '\n' +
+          '### Why "The Help"?\n' +
+          '- **Themes of Social Justice**: Like "To Kill a Mockingbird," "The Help" delves into issues of racial inequality and social justice, set against the backdrop of the American South.\n' +
+          '- **Moral Growth**: Both books feature characters who undergo significant moral growth and challenge societal norms.\n' +
+          '- **Human Compassion**: "The Help" also emphasizes the importance of empathy and understanding across racial divides.\n' +
+          '\n' +
+          'Would you like more information about "The Help"?',
+        refusal: null,
+        parsed: null,
+        tool_calls: []
+      },
+      finish_reason: 'stop',
+      index: 0,
+      logprobs: null
+    }
+  ],
+  created: 1738045716,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4'
+}
+PS D:\ai\ai-playwright-tools\examples>

@@ -1,0 +1,60 @@
+PS D:\ai\ai-playwright-tools\examples> node .\function-call-diy.js
+> message {
+  role: 'system',
+  content: 'Please use our book database, which you can access using functions to answer the following questions.'
+}
+> message {
+  role: 'user',
+  content: 'I really enjoyed reading To Kill a Mockingbird, could you recommend me a book that is similar and tell me why?'
+}
+
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_5b829087-b631-4cef-b6e2-899b68bfb72d',
+      type: 'function',
+      function: [Object]
+    }
+  ]
+}
+> function { name: 'search', arguments: '{"name":"To Kill a Mockingbird"}' }
+> message {
+  role: 'tool',
+  tool_call_id: 'call_0_5b829087-b631-4cef-b6e2-899b68bfb72d',
+  content: '[{"name":"To Kill a Mockingbird","id":"a1"}]'
+}
+
+> message {
+  role: 'assistant',
+  content: '',
+  tool_calls: [
+    {
+      index: 0,
+      id: 'call_0_2ad01fc6-2086-473a-ac55-ba05e27ec0b5',
+      type: 'function',
+      function: [Object]
+    }
+  ]
+}
+> function { name: 'get', arguments: '{"id":"a1"}' }
+> message {
+  role: 'tool',
+  tool_call_id: 'call_0_2ad01fc6-2086-473a-ac55-ba05e27ec0b5',
+  content: '{"id":"a1","name":"To Kill a Mockingbird","genre":"historical","description":"Compassionate, dramatic, and deeply moving, \\"To Kill A Mockingbird\\" takes readers to the roots of human behavior - to innocence and experience, kindness and cruelty, love and hatred, humor and pathos. Now with over 18 million copies in print and translated into forty languages, this regional story by a young Alabama woman claims universal appeal. Harper Lee always considered her book to be a simple love story. Today it is regarded as a masterpiece of American literature."}'
+}
+
+> message {
+  role: 'assistant',
+  content: 'To Kill a Mockingbird is a classic novel that explores themes of racial injustice, moral growth, and human compassion. If you enjoyed this book, I recommend reading "The Help" by Kathryn Stockett. \n' +
+    '\n' +
+    '### Why "The Help"?\n' +
+    '- **Similar Themes**: Both books deal with racial injustice and the moral complexities of society. "The Help" is set in the 1960s in Mississippi and focuses on the lives of African American maids and their relationships with white families.\n' +
+    '- **Character Development**: Like "To Kill a Mockingbird," "The Help" features strong character development and explores the moral growth of its protagonists.\n' +
+    '- **Emotional Depth**: Both novels offer deep emotional engagement, making readers reflect on societal issues and personal ethics.\n' +
+    '\n' +
+    'Would you like more information about "The Help"?'
+}
+PS D:\ai\ai-playwright-tools\examples>
