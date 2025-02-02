@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./utils/startServer.js",
+    "http": "cd ./utils/web & http-server -a localhost -p 8085 -s",
     "test": "playwright test"
   },
   "keywords": [],
@@ -12,11 +13,12 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@hono/node-server": "^1.13.7",
     "@playwright/test": "^1.50.0",
-    "@types/node": "^22.10.10"
+    "@types/node": "^22.10.10",
+    "http-server": "^14.1.1"
   },
   "dependencies": {
-    "@hono/node-server": "^1.13.7",
     "https-proxy-agent": "^7.0.6",
     "openai": "^4.80.1",
     "sanitize-html": "^2.14.0",
