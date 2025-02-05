@@ -1,0 +1,725 @@
+PS D:\ai\ai-playwright-tools\examples> node .\stream.js
+chunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+Deepchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+Sechunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ekchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ ischunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ anchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ advancedchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ AIchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ platformchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ designedchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ tochunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ enhancechunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ decisionchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+-makingchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ andchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ innovationchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ acrosschunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ industrieschunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+.chunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ Leverchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+agingchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ cuttingchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+-edgechunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ machinechunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ learningchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ andchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ datachunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ analyticschunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+,chunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ itchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ provideschunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ actionablechunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ insightschunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+,chunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ automchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ateschunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ complexchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ processeschunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+,chunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ andchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ optimchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+izeschunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ operationschunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+.chunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ Deepchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+Sechunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ekchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ empowerschunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ businesseschunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ tochunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ unlockchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ hiddenchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ potentialchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+,chunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ drivechunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ efficiencychunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+,chunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ andchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ staychunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ aheadchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ inchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ achunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ rapidlychunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ evolvingchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ digitalchunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+ landscapechunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+.chunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    { index: 0, delta: [Object], logprobs: null, finish_reason: null }
+  ]
+}
+chunk {
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  object: 'chat.completion.chunk',
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4',
+  choices: [
+    {
+      index: 0,
+      delta: [Object],
+      logprobs: null,
+      finish_reason: 'stop'
+    }
+  ],
+  usage: {
+    prompt_tokens: 12,
+    completion_tokens: 66,
+    total_tokens: 78,
+    prompt_tokens_details: { cached_tokens: 0 },
+    prompt_cache_hit_tokens: 0,
+    prompt_cache_miss_tokens: 12
+  }
+}
+{
+  role: 'assistant',
+  content: 'DeepSeek is an advanced AI platform designed to enhance decision-making and innovation across industries. Leveraging cutting-edge machine learning and data analytics, it provides actionable insights, automates complex processes, and optimizes operations. DeepSeek empowers businesses to unlock hidden potential, drive efficiency, and stay ahead in a rapidly evolving digital landscape.',
+  refusal: null,
+  parsed: null,
+  tool_calls: []
+}
+{
+  object: 'chat.completion',
+  usage: {
+    prompt_tokens: 12,
+    completion_tokens: 66,
+    total_tokens: 78,
+    prompt_tokens_details: { cached_tokens: 0 },
+    prompt_cache_hit_tokens: 0,
+    prompt_cache_miss_tokens: 12
+  },
+  id: 'c783feee-8b11-4800-92fb-662a6c1e6e85',
+  choices: [
+    {
+      message: [Object],
+      finish_reason: 'stop',
+      index: 0,
+      logprobs: null
+    }
+  ],
+  created: 1738763129,
+  model: 'deepseek-chat',
+  system_fingerprint: 'fp_3a5770e1b4'
+}
+PS D:\ai\ai-playwright-tools\examples>
