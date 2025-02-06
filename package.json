@@ -4,8 +4,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node ./utils/startServer.js",
-    "http": "cd ./utils/web & http-server -a localhost -p 8085 -s",
+    "start": "cd ./web & http-server -a 127.0.0.1 -p 3000 -s",
     "test": "playwright test"
   },
   "keywords": [],
@@ -13,7 +12,6 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@hono/node-server": "^1.13.7",
     "@playwright/test": "^1.50.0",
     "@types/node": "^22.10.10",
     "http-server": "^14.1.1"
