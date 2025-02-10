@@ -1,4 +1,4 @@
-import { test, expect } from '../extends/index';
+import { test, expect } from '../extends/auto';
 import { createFunctions } from "../extends/functions";
 
 //const options = undefined;
